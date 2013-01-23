@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Ruby on Rails: Welcome aboard</title>
-    <!--style type="text/css" media="screen">
+    <style type="text/css" media="screen">
       body {
         margin: 0;
         margin-bottom: 25px;
@@ -176,114 +176,123 @@
         border: 1px solid #000;
         
       }
-
+      .form {
+       border: 2px solid black;
+      }
     </style>
     <script type="text/javascript">
       function about() {
         info = document.getElementById('about-content');
         if (window.XMLHttpRequest)
           { xhr = new XMLHttpRequest(); }
-        else
+        else/**********************************************************************
+ *  readme template
+ *  Loops
+ **********************************************************************/
+
+Name:
+PennKey:
+Recitation:
+OS:
+Text editor:
+Hours to complete assignment (optional):
+
+
+
+/**********************************************************************
+ *  How does the mean squared distance of a random walker grow
+ *  as a function of the number of steps N? Briefly justify your
+ *  answer based on computational experiments.
+ *********************************************************************/
+
+
+
+
+
+/**********************************************************************
+ *  List whatever help (if any) that you received. You don't need
+ *  to include the course materials, but do include the names of
+ *  classmates or TAs that assisted you.
+ **********************************************************************/
+
+
+
+
+/**********************************************************************
+ *  Describe any serious problems you encountered.                    
+ **********************************************************************/
+
+
+
+
+/**********************************************************************
+ *  List any other comments here.                                     
+ **********************************************************************/
+
           { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
         xhr.open("GET","rails/info/properties",false);
         xhr.send("");
         info.innerHTML = xhr.responseText;
         info.style.display = 'block'
       }
-    </script-->
-      <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    </script>
   </head>
-  <!--link href = "css/bootstrap.min.css" rel = "stylesheet" media = "screen"-->
-
   <body>
-
     <div id="page">
-      <div class = "container">
-      <div class = "row-fluid">
-          <div class="span4">
-        <div id="sidebar">
-            <ul id="sidebar-items">
-            <ul>
-
-
-                <h4>Browse the documentation</h4>
-                   <ul class="nav nav-pills nav-stacked">
-                    <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-                    <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-                    <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-                    <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-                    </ul>
-
-
+      <div id="sidebar">
+        <ul id="sidebar-items">
+          <li>
+            <h3>Browse the documentation</h3>
+            <ul class="links">
+              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
+              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
+              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
+              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
             </ul>
-            </ul>
+          </li>
+        </ul>
+      </div>
 
-            <div class = "well">
-                <p>Some random form</p>
-                <form class = "form-horizontal"><input type = "text" placeholder = "Text input">
-                <button type = "submit" class = "btn">Submit</button>
-                </form>
-            </div>
-        </div>
-        </div>
-
-
-      <div class = "span8">
-
-          <div class="well">
+      <div id="content">
         <div id="header">
           <h1>Welcome aboard</h1>
           <h2>You&rsquo;re riding Ruby on Rails!</h2>
         </div>
-          </div>
 
         <div id="about">
           <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
           <div id="about-content" style="display: none"></div>
         </div>
 
-         <div class = "well">
         <div id="getting-started">
           <h1>Getting started</h1>
           <h2>Here&rsquo;s how to get rolling:</h2>
 
           <ol>
-
             <li>
-
-              <h4>Use <code>rails generate</code> to create your models and controllers</h4>
+              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
               <p>To see all available options, run it without parameters.</p>
-
             </li>
 
-
             <li>
-              <h4>Set up a default route and remove <span class="filename">public/index.html</span></h4>
+              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
               <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
             </li>
 
             <li>
-              <h4>Create your database</h4>
+              <h2>Create your database</h2>
               <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
 	    </li>
           </ol>
         </div>
-        </div>
-
 	  <p><a href = "https://github.com/lilw"> Click Here to see my github</a></p>
-
-
+	  <p class = "form"><form> <input type = "text">
+	      <input type = "submit" value = "CLICK ME!"/>
+	  </form></p>
 	   <div id= "image"><img src = "http://www.google.com/url?source=imglanding&ct=img&q=http://danferraroblog.com/wp-content/uploads/2011/07/lol-cat-3.jpg&sa=X&ei=v3_3UMPNMKfg0QHlk4CIDA&ved=0CAkQ8wc4Eg&usg=AFQjCNEVHzMsGfPworjxitYjcEOG9GTP2Q"/></div>
-      </div>
-      </div>
       </div>
 
       <div id="footer">&nbsp;</div>
     </div>
-    <script src = "http://code.jquery.com/jquery-latest.js"></script>
-    <!--script src = "js/bootstrap.min.js"></script-->
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
-    <!--script src >"http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js"</script-->
   </body>
-
 </html>
