@@ -11,7 +11,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130116190746) do
+ActiveRecord::Schema.define(:version => 20130206080507) do
+
+  create_table "floors", :force => true do |t|
+    t.string   "RA"
+    t.string   "string"
+    t.string   "floorNum"
+    t.string   "integer"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "housings", :force => true do |t|
+    t.string   "room"
+    t.string   "integer"
+    t.string   "vacant"
+    t.string   "boolean"
+    t.string   "occupant"
+    t.string   "text"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "teams", :force => true do |t|
     t.string   "name"
