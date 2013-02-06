@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="080ffa31-3f09-4986-b9b4-1c17eb1a75bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="newapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +43,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="22" selection-start="1551" selection-end="1551" vertical-scroll-proportion="0.6736111">
+            <state line="43" column="65" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.25694445">
               <folding />
             </state>
           </provider>
@@ -691,7 +691,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="22" selection-start="1551" selection-end="1551" vertical-scroll-proportion="0.6736111">
+        <state line="43" column="65" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.25694445">
           <folding />
         </state>
       </provider>
