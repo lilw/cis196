@@ -1,0 +1,25 @@
+<%= form_for(@housing) do |f| %>
+  <% if @housing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@housing.errors.count, "error") %> prohibited this housing from being saved:</h2>
+
+      <ul>
+      <% @housing.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :floorNum %><br />
+    <%= f.number_field :floorNum %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

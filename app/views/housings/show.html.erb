@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Floornum:</b>
+  <%= @housing.floorNum %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @housing.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_housing_path(@housing) %> |
+<%= link_to 'Back', housings_path %>
