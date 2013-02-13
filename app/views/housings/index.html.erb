@@ -1,18 +1,27 @@
 <h1>Listing housings</h1>
 
-<table>
+<table class= "table">
   <tr>
-    <th>Floornum</th>
+    <th>Floor</th>
     <th>Name</th>
+    <th>Rodin</th>
+    <th>Harrison</th>
+    <th>Harnwell</th>
+
+
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @housings.each do |housing| %>
+
   <tr>
     <td><%= housing.floorNum %></td>
     <td><%= housing.name %></td>
+    <td><%= housing.rodin_pref %></td>
+    <td><%= housing.harrison_pref %></td>
+    <td><%= housing.harnwell_pref %></td>
     <td><%= link_to 'Show', housing %></td>
     <td><%= link_to 'Edit', edit_housing_path(housing) %></td>
     <td><%= link_to 'Destroy', housing, method: :delete, data: { confirm: 'Are you sure?' } %></td>

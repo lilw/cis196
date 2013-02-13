@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130206155554) do
+ActiveRecord::Schema.define(:version => 20130213155120) do
 
   create_table "floors", :force => true do |t|
     t.string   "RA"
@@ -23,8 +23,11 @@ ActiveRecord::Schema.define(:version => 20130206155554) do
   create_table "housings", :force => true do |t|
     t.integer  "floorNum"
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.boolean  "rodin_pref"
+    t.boolean  "harnwell_pref"
+    t.boolean  "harrison_pref"
   end
 
   create_table "teams", :force => true do |t|

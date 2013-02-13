@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div class= "container">
 <p>
   <b>Floornum:</b>
   <%= @housing.floorNum %>
@@ -10,6 +10,22 @@
   <%= @housing.name %>
 </p>
 
+<p>
+  <b>Rodin:</b>
+  <%= @housing.rodin_pref %>
+</p>
+
+<p>
+  <b>Harrison:</b>
+  <%= @housing.harrison_pref %>
+</p>
+
+<p>
+  <b>Harnwell:</b>
+  <%= @housing.harnwell_pref %>
+</p>
+
 
 <%= link_to 'Edit', edit_housing_path(@housing) %> |
 <%= link_to 'Back', housings_path %>
+</div>
