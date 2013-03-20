@@ -4,6 +4,8 @@ class HousingsController < ApplicationController
   def index
     @housings = Housing.all
 
+    @rooms = Housing.rodinites
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @housings }

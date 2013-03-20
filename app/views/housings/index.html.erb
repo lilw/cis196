@@ -29,6 +29,13 @@
 <% end %>
 </table>
 
+<p>Who wants to live in Rodin?<p>
+<% @rooms.each do |room| %>
+   <tr>
+     <td><%= room.name %></td>
+
+   </tr>
+<% end %>
 <br />
 
 <%= link_to 'New Housing', new_housing_path %>
