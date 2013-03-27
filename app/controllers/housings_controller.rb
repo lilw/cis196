@@ -48,12 +48,17 @@ class HousingsController < ApplicationController
       if @housing.save
         format.html { redirect_to @housing, notice: 'Housing was successfully created.' }
         format.json { render json: @housing, status: :created, location: @housing }
+        Notifications.new_home.deliver
       else
         format.html { render action: "new" }
         format.json { render json: @housing.errors, status: :unprocessable_entity }
       end
     end
   end
+
+
+
+
 
   # PUT /housings/1
   # PUT /housings/1.json
