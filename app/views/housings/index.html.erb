@@ -29,6 +29,40 @@
 <% end %>
 </table>
 
+
+
+<div class = "container-fluid">
+
+  <span><button id = "help-button">Help</button>
+      <span id="help"></span>
+  </span>
+
+</div>
+<script src="/javascripts/jquery.js" type="text/javascript"></script>
+<script src="/javascripts/jquery_ujs.js" type="text/javascript"></script >
+<script>
+    $(function() {
+        var $btton = $("#help-button");
+        var $help = $("#help");
+        var isOn = false;
+
+        $btton.click(function() {
+            if (!isOn) {
+                $help.text("Click 'New Housing' in order to register for more housing");
+                isOn = true;
+            }else {
+                $help.text("");
+                isOn = false;
+            }
+
+         });
+
+
+
+
+    });
+</script>
+
 <p>Who wants to live in Rodin?<p>
 <% @rooms.each do |room| %>
    <tr>

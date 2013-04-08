@@ -1,6 +1,8 @@
 class HousingsController < ApplicationController
   # GET /housings
   # GET /housings.json
+
+
   def index
     @housings = Housing.all
 
